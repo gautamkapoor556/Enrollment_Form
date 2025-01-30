@@ -16,19 +16,17 @@
         <div class="header">
             <h2>Client & Product Overview</h2>
         </div>
-
         <div class="content">
             <div class="left-section">
                 <label>Company</label>
                 <select>
                     <option id="option">ADISOY FOODS & BEVERAGES PVT. LTD.</option>
                 </select>
-                
+
                 <label>Social Account</label>
                 <select>
                     <option>Adisoy</option>
                 </select>
-                
                 <label>Brand Colors</label>
                 <div class="colors">
                     <span class="color" style="background: #e39795"></span>
@@ -38,16 +36,13 @@
                     <span class="color" style="background: black"></span>
                     <label id="brand-colors" for="">#9AE6B4</label>
                 </div>
-                
                 <label id="brand-font-margin">Brand Font</label>
                 <p>Heading <span> Montserrat</span></p>
                 <p>Subheading <span> Montserrat</span></p>
                 <p>Body <span> Montserrat</span></p>
-                
                 <label id="margin-top-lang">Language</label>
                 <p><span>English</span></p>
             </div>
-            
             <div class="right-section">
                 <label>Plan overview</label>
                 <div class="plan-tags">
@@ -57,7 +52,6 @@
                     <span>Cover - 1</span>
                     <span>Gif - 0</span>
                 </div>
-                
                 <div class="product-selection">
                     <label>Select Product</label>
                     <div>
@@ -68,69 +62,64 @@
                 <select id="margin">
                     <option>Soy Milk</option>
                 </select>
-                
                 <p id="p-size">CTA:<span> Shop Now</span></p>
                 <p id="p-size">Target Audience:<span> Health-conscious adults, age 25-45</span></p>
-                <p id="p-size">Geographical Area:<span>  Urban areas in North India</span></p>
+                <p id="p-size">Geographical Area:<span> Urban areas in North India</span></p>
                 <p id="p-size">Brand Guidelines:<span> Use fresh, natural imagery. Emphasize health benefits.</span></p>
                 <p id="p-size">Do: <span> Use fresh, natural imagery. Emphasize health benefits.</span></p>
                 <p id="p-size">Don't:<span> Use artificial or processed food imagery.</span></p>
             </div>
         </div>
-</main>
-
-
-        <div class="container1">
-            <div class="first-box">
-                <div class="first-box-heading">
-                    <h2>Create New Content</h2>
-                    <button class="btn" id="uploadBtn"><i class="fa-solid fa-arrow-up"></i>Upload Excel File</button>
-                    <input type="file" id="fileInput" accept=".xls, .xlsx" style="display: none;">
+    </main>
+    <div class="container1">
+        <div class="first-box">
+            <div class="first-box-heading">
+                <h2>Create New Content</h2>
+                <button class="btn" id="uploadBtn"><i class="fa-solid fa-arrow-up"></i>Upload Excel File</button>
+                <input type="file" id="fileInput" accept=".xls, .xlsx" style="display: none;">
+            </div>
+            <div class="first-box-content">
+                <div class="first-box-content-1">
+                    <label for="date">Date</label>
+                    <input type="date" placeholder="pick a date">
+                    <label for="type">Type</label>
+                    <select name="type">
+                        <option>Select Type</option>
+                    </select>
+                    <label for="festival">Festival</label>
+                    <select name="festival">
+                        <option>Select Festival</option>
+                    </select>
+                    <label for="campaign">Campaign</label>
+                    <input type="text" placeholder="Enter Campaign name" id="campaign">
+                    <label for="product">Product URL</label>
+                    <select id="product">
+                        <option>Paste Product URL</option>
+                    </select>
                 </div>
-                <div class="first-box-content">
-                    <div class="first-box-content-1">
-                        <label for="date">Date</label>
-                        <input type="date" placeholder="pick a date">
-                        <label for="type">Type</label>
-                        <select name="type">
-                            <option>Select Type</option>
-                        </select>
-                        <label for="festival">Festival</label>
-                        <select name="festival">
-                            <option>Select Festival</option>
-                        </select>
-                        <label for="campaign">Campaign</label>
-                        <input type="text" placeholder="Enter Campaign name" id="campaign">
-                        <label for="product">Product URL</label>
-                        <select id="product">
-                            <option>Paste Product URL</option>
-                        </select>
-                    </div>
-                    <div class="first-box-content-2">
-                        <label for="content">Content</label>
-                        <textarea id="content" rows="6" cols="40"></textarea>
-                        <label for="caption">Caption</label>
-                        <textarea id="caption" rows="4" cols="40"></textarea>
-                        <label for="remarks">Remarks</label>
-                        <textarea id="remarks" rows="4" cols="40"></textarea>
-                    </div>
-                </div>
-                <div class="btn-row">
-                    <button type="button" class="btn1 btn">Cancel</button>
-                    <button type="button" class="btn2 btn">Upload</button>
+                <div class="first-box-content-2">
+                    <label for="content">Content</label>
+                    <textarea id="content" rows="6" cols="40"></textarea>
+                    <label for="caption">Caption</label>
+                    <textarea id="caption" rows="4" cols="40"></textarea>
+                    <label for="remarks">Remarks</label>
+                    <textarea id="remarks" rows="4" cols="40"></textarea>
                 </div>
             </div>
-            <div class="second-box">
-    
+            <div class="btn-row">
+                <button type="button" class="btn1 btn">Cancel</button>
+                <button type="button" class="btn2 btn">Upload</button>
             </div>
         </div>
-        
-<script>
-    document.getElementById("uploadBtn").addEventListener("click", function () {
-    document.getElementById("fileInput").click();
-});
-</script>
+        <div class="second-box">
+        </div>
+    </div>
 
+    <script>
+        document.getElementById("uploadBtn").addEventListener("click", function () {
+            document.getElementById("fileInput").click();
+        });
+    </script>
 </body>
 
 </html>
