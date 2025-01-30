@@ -84,7 +84,8 @@
             <div class="first-box">
                 <div class="first-box-heading">
                     <h2>Create New Content</h2>
-                    <button><i class="fa-solid fa-arrow-up"></i>Upload Excel File</button>
+                    <button class="btn" id="uploadBtn"><i class="fa-solid fa-arrow-up"></i>Upload Excel File</button>
+                    <input type="file" id="fileInput" accept=".xls, .xlsx" style="display: none;">
                 </div>
                 <div class="first-box-content">
                     <div class="first-box-content-1">
@@ -115,15 +116,20 @@
                     </div>
                 </div>
                 <div class="btn-row">
-                    <button class="btn1">Cancel</button>
-                    <button class="btn2">Upload</button>
+                    <button type="button" class="btn1 btn">Cancel</button>
+                    <button type="button" class="btn2 btn">Upload</button>
                 </div>
             </div>
             <div class="second-box">
     
             </div>
         </div>
-
+        
+<script>
+    document.getElementById("uploadBtn").addEventListener("click", function () {
+    document.getElementById("fileInput").click();
+});
+</script>
 
 </body>
 
